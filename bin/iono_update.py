@@ -14,7 +14,7 @@ __date__ = "25/09/2018"
 
 # Append the service name to this base URL, eg 'con', 'obs', etc.
 BASEURL = 'http://mwa-metadata01.pawsey.org.au/metadata/'
-dbfile = '/group/mwasci/nhurleywalker/GLEAM-X-pipeline/db/GLEAM-X.sqlite'
+dbfile = '/opt/mwa/GLEAM-X-pipeline/db/GLEAM-X.sqlite'
 
 def update_ionosphere(obsid, med, peak, std, cur):
     cur.execute("SELECT count(*) FROM observation WHERE obs_id =?",(obsid,))
