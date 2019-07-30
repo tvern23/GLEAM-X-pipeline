@@ -6,7 +6,7 @@ import os
 import sqlite3
 import sys
 
-db='/group/mwasci/nhurleywalker/GLEAM-X-pipeline/db/GLEAM-X.sqlite'
+db='/opt/mwa/GLEAM-X-pipeline/db/GLEAM-X.sqlite'
 
 def queue_job(job_id, task_id, submission_time, obs_id, user, batch_file, stderr, stdout, task):
     conn = sqlite3.connect(db)
